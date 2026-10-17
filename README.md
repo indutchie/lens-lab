@@ -1,14 +1,6 @@
-# The Plane of Focus — Interactive 3D Optical Bench & Camera Lens Lab
+# The Lens Lab: Plane of Focus — Interactive 3D Optical Bench & Camera Lens Lab
 
-[![Built with Three.js](https://img.shields.io/badge/Three.js-r186-black?style=flat-square&logo=three.js)](https://threejs.org/)
-[![React 19](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
-[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-
-> *"Everyone knows out-of-focus is blurry. Almost nobody knows why. Focus isn't a zone — it's a razor-thin 2D plane."*
-
-**The Plane of Focus** is a physics-based, interactive 3D WebGL optical bench that visualizes photographic optics from first principles. Watch dynamic light rays bend through floating spherical glass elements and an adjustable 9-blade mechanical iris to form an inverted image on a ground-glass sensor.
+**The Lens Lab: Plane of Focus** is a physics-based, interactive 3D WebGL optical bench that visualizes photographic optics from first principles. Watch dynamic light rays bend through floating spherical glass elements and an adjustable 9-blade mechanical iris to form an inverted image on a ground-glass sensor.
 
 ---
 
@@ -80,70 +72,6 @@ npm run dev
 ```
 
 Open your browser at `http://localhost:3000`.
-
----
-
-## 🌐 How to Host on GitHub (GitHub Pages)
-
-This repository includes a pre-configured GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys your site to GitHub Pages whenever you push to `main`.
-
-### Step 1: Create a New GitHub Repository
-1. Go to [GitHub.com/new](https://github.com/new).
-2. Enter a repository name (e.g., `plane-of-focus`).
-3. Choose **Public** (recommended for free GitHub Pages).
-4. Click **Create repository** (do not initialize with README since you already have one).
-
-### Step 2: Push Your Code to GitHub
-Run the following commands in your project root:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: The Plane of Focus 3D interactive optical bench"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages in Repository Settings
-1. On GitHub, navigate to your repository.
-2. Click on the **Settings** tab.
-3. In the left sidebar, click on **Pages** (under "Code and automation").
-4. Under **Build and deployment** > **Source**, select **GitHub Actions**.
-5. That's it! GitHub Actions will trigger `.github/workflows/deploy.yml` and publish your app.
-6. Your live website URL will be:
-   ```
-   https://<your-username>.github.io/<your-repo-name>/
-   ```
-
-*(Note: `vite.config.ts` is already configured with `base: './'`, so your assets load properly on GitHub Pages subpaths!)*
-
----
-
-## ⚡ Alternative Hosting Options
-
-### 1. Vercel (1-Click Deployment)
-1. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
-2. Click **Add New Project** and select your repository.
-3. Keep default settings:
-   - Framework Preset: **Vite**
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-   - Install Command: `npm install --legacy-peer-deps`
-4. Click **Deploy**.
-
-### 2. Netlify
-1. Go to [netlify.com](https://netlify.com) and import your GitHub repository.
-2. Set Build command to `npm run build` and Publish directory to `dist`.
-3. Click **Deploy Site**.
-
-### 3. Docker / Node Server
-To run in production as a full-stack container or server:
-```bash
-npm run build
-npm start
-```
-The Express server in `server.ts` will serve the compiled static files from `dist/` on port 3000.
 
 ---
 
