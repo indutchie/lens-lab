@@ -1,0 +1,6 @@
+{
+  "name": "The Plane of Focus",
+  "description": "An interactive 3D optical bench simulation illustrating camera lens optics, real-time ray tracing, aperture depth of field, and the plane of focus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
